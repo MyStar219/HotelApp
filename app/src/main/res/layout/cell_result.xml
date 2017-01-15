@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/house"
+        android:id="@+id/id_imgCellResult"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_tvPrice"
+        android:layout_alignTop="@+id/id_imgCellResult"
+        android:layout_toRightOf="@+id/id_imgCellResult"
+        android:layout_toEndOf="@+id/id_imgCellResult"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"
+        android:textColor="@color/blue" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_tvAddress"
+        android:layout_below="@+id/id_tvPrice"
+        android:layout_alignLeft="@+id/id_tvPrice"
+        android:layout_alignStart="@+id/id_tvPrice"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/id_imgCellResult"
+        android:layout_alignLeft="@+id/id_imgCellResult"
+        android:layout_alignStart="@+id/id_imgCellResult"
+        android:layout_height="1dp"
+        android:background="@color/black"></LinearLayout>
+</RelativeLayout>
